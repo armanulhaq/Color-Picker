@@ -1,0 +1,56 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* Add this line to hide scroll */
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 20px 0; /* Adjust the padding to create space above and below the h1 */
+}
+
+.color-picker {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: calc(100% - 100px); /* Subtract height of h1 to prevent scroll */
+  overflow-y: auto;
+}
+
+.color-picker__button {
+  padding: 8px 16px;
+  background-color: #f1f1f1;
+  border: none;
+  cursor: pointer;
+}
+
+.color-picker__list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.color-picker__item {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.color-picker__selected-color {
+  margin-top: 10px;
+  font-weight: bold;
+}
